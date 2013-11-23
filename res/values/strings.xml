@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dices</string>
+    <string name="roll_button">Roll</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

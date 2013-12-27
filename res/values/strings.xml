@@ -2,7 +2,11 @@
 <resources>
 
     <string name="app_name">Dices</string>
-    <string name="roll_button">Roll</string>
     <string name="action_settings">Settings</string>
+    
+    <!-- BUTTONS -->
+    <string name="roll_button">Roll</string>
+    <string name="type_button">Game Type</string>
+    <string name="conf_button">Settings</string>
 
 </resources>

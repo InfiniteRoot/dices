@@ -1,24 +1,53 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/gameTypeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/type_button" 
+            android:width="100dp"/>
+
+        <Button
+            android:id="@+id/confButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/gameTypeButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/conf_button"
+            android:width="100dp"/>
+
+    </RelativeLayout>
+
+    <TextureView
+        android:id="@+id/textureView1"
+        android:layout_width="wrap_content"
+        android:layout_height="76dp" />
 
     <TextView
         android:id="@+id/resultDicesTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-		android:layout_centerVertical="true"
-        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="300sp" />
-    
+
     <Button
         android:id="@+id/rollButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:text="@+string/roll_button" />
+        android:text="@string/roll_button" />
 
-</RelativeLayout>
+</LinearLayout>
